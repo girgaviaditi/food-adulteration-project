@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Adulteration Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login/Signup Section -->
+    <section id="authSection">
+        <div class="auth-box">
+            <h2 id="authTitle">Sign Up</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="authButton">Sign Up</button>
+            <p id="toggleAuth">Already have an account? <a href="#">Login</a></p>
+        </div>
+    </section>
+
+    <!-- Main Content (Hidden until login) -->
+    <section id="mainContent" style="display:none;">
+        <nav class="navbar">
+
+    <div class="logo">
+        FoodSafe
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#productList">Products</a></li>
+        <li><a href="#quizSection">Quiz</a></li>
+        <li><a href="#contactForm">Contact</a></li>
+    </ul>
+
+</nav>
+
+        <header>
+            <h1>Food Adulteration Awareness</h1>
+            <input type="text" id="searchBar" placeholder="Search products...">
+            <button id="darkModeToggle">🌙 Dark Mode</button>
+        </header>
+        <div id="categories">
+
+    <button class="categoryBtn" data-category="all">All</button>
+    <button class="categoryBtn" data-category="Dairy">Dairy</button>
+    <button class="categoryBtn" data-category="Spices">Spices</button>
+    <button class="categoryBtn" data-category="Drinks">Drinks</button>
+    <button class="categoryBtn" data-category="Grains">Grains</button>
+
+</div>
+
+        <main id="productList"></main>
+        <section id="quizSection">
+
+    <h2>Food Adulteration Quiz</h2>
+
+    <div id="quizBox">
+
+        <h3 id="question"></h3>
+
+        <div id="answers"></div>
+
+        <button id="nextQuestion">
+            Next Question
+        </button>
+
+    </div>
+
+</section>
+
+        <!-- Modal -->
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <img id="modalImg" src="" alt="">
+                <div id="modalVideoLink" style="margin-top:10px; display:none;">
+  <a id="videoAnchor" href="" target="_blank">Watch Test Video</a>
+</div>
+
+                <p id="modalTest"></p>
+                <p id="modalReview"></p>
+                <h3>User Experiences</h3>
+                <ul id="modalExperiences"></ul>
+                <textarea id="experienceInput" placeholder="Share your experience..."></textarea>
+                <button id="addExperienceBtn">Add Experience</button>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <footer>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+                <p>© 2025 Food Adulteration Project</p>
+  <button id="shareBtn">🔗 Share This Website</button>
+            </form>
+        </footer>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
