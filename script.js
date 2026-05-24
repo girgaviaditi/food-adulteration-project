@@ -47,20 +47,20 @@ function loginSuccess() {
 
 // ===== Product Data =====
 const products = [
-    {name:"Milk",category:"Dairy", img:"milk.jpg", video:"https://youtube.com/shorts/Yu9igRZeK_s?si=v0zNU15ofgWhasVs",test:"Boil and check for smell", review:"Often adulterated with water", experiences:[]},
-    {name:"Turmeric",category:"Spices", img:"turmeric.jpg",video:"https://youtube.com/shorts/xzI4oyX5g_o?si=Y86FCih1SRmNOQJi", test:"Add to water & check sediment", review:"Lead chromate sometimes added", experiences:[]},
-    {name:"Honey",category:"All", img:"honey.jpg",video:"https://youtube.com/shorts/6kqHtpnBt88?si=98PJeKHlqGb2WbrJ" ,test:"Mix with water, pure honey sinks", review:"Sugar syrup often added", experiences:[]},
-    {name:"Sugar",category:"All", img:"sugar.jpg", test:"Check for chalk powder",video:"https://youtube.com/shorts/fK7PTSY8TB8?si=oJDQiiQIAMFiM1Y6", review:"Sometimes mixed with chalk", experiences:[]},
-    {name:"Salt",category:"All", img:"salt.jpg",video:"https://youtube.com/shorts/oT_6pZu0hQU?si=MiQBOmguEyPWr4VY", test:"Check for white powdered stone", review:"Stone powder possible", experiences:[]},
-    {name:"Ghee",category:"Dairy", img:"ghee.jpg", test:"Heat and check aroma",video:"https://youtube.com/shorts/Dp74Rr4IDBw?si=jFtQCxNVxkVXBWDC", review:"Mixed with vanaspati", experiences:[]},
-    {name:"Tea Powder",category:"All" ,img:"teapowder.jpg", test:"Add to cold water",video:"https://youtube.com/shorts/ty7APfFNHz8?si=x1rLcynzbxY4aMVh", review:"Iron fillings found sometimes", experiences:[]},
-    {name:"Coffee",category:"All", img:"coffee.jpg", test:"Check for tamarind seed powder",video:"https://youtube.com/shorts/sYbDsnT5WvY?si=u96438sA2jNUMjY0", review:"Cheap powders added", experiences:[]},
-    {name:"Ice Cream",category:"All", img:"icecream.jpg", test:"Check for washing powder foam", review:"Non-edible fats used",video:"https://youtube.com/shorts/rYe-b_0hWK8?si=mwr_TWc-sn-6K1t7", experiences:[]},
-    {name:"Soft Drinks",category:"Drinks", img:"softdrinks.jpg", test:"Check excessive fizz", review:"Artificial color excess", experiences:[]},
-    {name:"Fruits",category:"All", img:"fruits.jpg", test:"Dip in water, remove wax",video:"https://youtube.com/shorts/66c39D3aN68?si=KV9hT7AcAGD5LtHP", review:"Wax coating common", experiences:[]},
-    {name:"Bread",category:"All", img:"bread.jpg", test:"Check for smell",video:"https://youtube.com/shorts/Gq-kATANtMw?si=2lxSMvBXeP66vW1N", review:"Potassium bromate use",experiences:[]},
-    {name:"Rice",category:"Grains", img:"rice.jpg",video:"https://youtube.com/shorts/1CiFbxQxVvg?si=8trFZIOD45VGpVNv", test:"Burn to smell plastic", review:"Plastic rice incidents", experiences:[]},
-    {name:"Wheat Flour",category:"All", img:"wheatflour.jpg", test:"Check for chalk powder",video:"https://youtube.com/shorts/lYdlROTOWe4?si=hUGv8mlk2aXsBJiU.mp4", review:"Chalk mixed for weight", experiences:[]}
+    {name:"Milk",category:"Dairy", img:"milk.jpg.jpeg", video:"https://youtube.com/shorts/Yu9igRZeK_s?si=v0zNU15ofgWhasVs",test:"Boil and check for smell", review:"Often adulterated with water", experiences:[]},
+    {name:"Turmeric",category:"Spices", img:"turmeric.jpg.jpeg",video:"https://youtube.com/shorts/xzI4oyX5g_o?si=Y86FCih1SRmNOQJi", test:"Add to water & check sediment", review:"Lead chromate sometimes added", experiences:[]},
+    {name:"Honey",category:"All", img:"honey.jpg.jpeg",video:"https://youtube.com/shorts/6kqHtpnBt88?si=98PJeKHlqGb2WbrJ" ,test:"Mix with water, pure honey sinks", review:"Sugar syrup often added", experiences:[]},
+    {name:"Sugar",category:"All", img:"sugar.jpg.jpeg", test:"Check for chalk powder",video:"https://youtube.com/shorts/fK7PTSY8TB8?si=oJDQiiQIAMFiM1Y6", review:"Sometimes mixed with chalk", experiences:[]},
+    {name:"Salt",category:"All", img:"salt.jpg.jpeg",video:"https://youtube.com/shorts/oT_6pZu0hQU?si=MiQBOmguEyPWr4VY", test:"Check for white powdered stone", review:"Stone powder possible", experiences:[]},
+    {name:"Ghee",category:"Dairy", img:"ghee.jpg.jpeg", test:"Heat and check aroma",video:"https://youtube.com/shorts/Dp74Rr4IDBw?si=jFtQCxNVxkVXBWDC", review:"Mixed with vanaspati", experiences:[]},
+    {name:"Tea Powder",category:"All" ,img:"teapowder.jpg.jpeg", test:"Add to cold water",video:"https://youtube.com/shorts/ty7APfFNHz8?si=x1rLcynzbxY4aMVh", review:"Iron fillings found sometimes", experiences:[]},
+    {name:"Coffee",category:"All", img:"coffee.jpg.jpeg", test:"Check for tamarind seed powder",video:"https://youtube.com/shorts/sYbDsnT5WvY?si=u96438sA2jNUMjY0", review:"Cheap powders added", experiences:[]},
+    {name:"Ice Cream",category:"All", img:"icecream.jpg.jpeg", test:"Check for washing powder foam", review:"Non-edible fats used",video:"https://youtube.com/shorts/rYe-b_0hWK8?si=mwr_TWc-sn-6K1t7", experiences:[]},
+    {name:"Soft Drinks",category:"Drinks", img:"softdrinks.jpg.jpeg", test:"Check excessive fizz", review:"Artificial color excess", experiences:[]},
+    {name:"Fruits",category:"All", img:"fruits.jpg.jpeg", test:"Dip in water, remove wax",video:"https://youtube.com/shorts/66c39D3aN68?si=KV9hT7AcAGD5LtHP", review:"Wax coating common", experiences:[]},
+    {name:"Bread",category:"All", img:"bread.jpg.jpeg", test:"Check for smell",video:"https://youtube.com/shorts/Gq-kATANtMw?si=2lxSMvBXeP66vW1N", review:"Potassium bromate use",experiences:[]},
+    {name:"Rice",category:"Grains", img:"rice.jpg.jpeg",video:"https://youtube.com/shorts/1CiFbxQxVvg?si=8trFZIOD45VGpVNv", test:"Burn to smell plastic", review:"Plastic rice incidents", experiences:[]},
+    {name:"Wheat Flour",category:"All",img:"wheatflour.jpg.jpeg", test:"Check for chalk powder",video:"https://youtube.com/shorts/lYdlROTOWe4?si=hUGv8mlk2aXsBJiU.mp4", review:"Chalk mixed for weight", experiences:[]}
 ];
 
 // ===== Render Products =====
