@@ -47,7 +47,7 @@ function loginSuccess() {
 
 // ===== Product Data =====
 const products = [
-    {name:"Milk",category:"Dairy", img:"milk.jpg.jpeg", video:"https://youtube.com/shorts/Yu9igRZeK_s?si=v0zNU15ofgWhasVs",test:"Boil and check for smell", review:"Often adulterated with water", experiences:[]},
+    {name:"Milk",category:"Dairy", img:"https://github.com/girgaviaditi/food-adulteration-project/blob/main/bread.jpg.jpeg?raw=true", video:"https://youtube.com/shorts/Yu9igRZeK_s?si=v0zNU15ofgWhasVs",test:"Boil and check for smell", review:"Often adulterated with water", experiences:[]},
     {name:"Turmeric",category:"Spices", img:"turmeric.jpg.jpeg",video:"https://youtube.com/shorts/xzI4oyX5g_o?si=Y86FCih1SRmNOQJi", test:"Add to water & check sediment", review:"Lead chromate sometimes added", experiences:[]},
     {name:"Honey",category:"All", img:"honey.jpg.jpeg",video:"https://youtube.com/shorts/6kqHtpnBt88?si=98PJeKHlqGb2WbrJ" ,test:"Mix with water, pure honey sinks", review:"Sugar syrup often added", experiences:[]},
     {name:"Sugar",category:"All", img:"sugar.jpg.jpeg", test:"Check for chalk powder",video:"https://youtube.com/shorts/fK7PTSY8TB8?si=oJDQiiQIAMFiM1Y6", review:"Sometimes mixed with chalk", experiences:[]},
