@@ -93,6 +93,7 @@ function openModal(i) {
     modalTitle.textContent = item.name;
     modalTest.textContent = `Test: ${item.test}`;
     modalReview.textContent = `Review: ${item.review}`;
+    modalImg.src = item.img;
     
 
     if (item.video) {
@@ -118,7 +119,7 @@ function renderExperiences() {
 
 closeModal.addEventListener("click", () => {
     modal.style.display = "none";
-    modalVideo.pause();
+   
 });
 
 document.getElementById("addExperienceBtn").addEventListener("click", () => {
@@ -190,29 +191,55 @@ categoryButtons.forEach(btn => {
     });
 
 });
-// ===== Share Website Link =====
+// ===== SHARE WEBSITE =====
 
-document.getElementById("shareBtn").addEventListener("click", async () => {
+const shareBtn =
+document.getElementById("shareBtn");
+
+shareBtn.addEventListener("click", async () => {
+
+    const websiteURL =
+    window.location.href;
 
     const shareData = {
-        title: "Food Adulteration Awareness",
-        text: "Check this amazing food adulteration awareness website!",
-        url: window.location.href
+
+        title:
+        "Food Adulteration Awareness",
+
+        text:
+        "Check out this Food Adulteration website!",
+
+        url:
+        websiteURL
     };
 
+    // Mobile Sharing
     if (navigator.share) {
+
         try {
+
             await navigator.share(shareData);
+
         } catch (err) {
+
             console.log(err);
+
         }
-    } else {
 
-        const whatsappURL =
-            `https://wa.me/?text=${encodeURIComponent(shareData.text + " " + shareData.url)}`;
-
-        window.open(whatsappURL, "_blank");
     }
+
+    // Desktop Sharing
+    else {
+
+        navigator.clipboard
+        .writeText(websiteURL);
+
+        alert(
+            "Website link copied successfully!"
+        );
+
+    }
+
 });
 // ===== Dark Mode =====
 const darkBtn = document.getElementById("darkModeToggle");
