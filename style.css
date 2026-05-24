@@ -70,19 +70,42 @@ header {
     background: rgba(0,0,0,0.5);
 }
 .modal-content {
+
     background: white;
+
     padding: 20px;
-    margin: 10px auto;
+
+    margin: 30px auto;
+
     width: 60%;
+
     border-radius: 10px;
+
     position: relative;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
 }
 #closeModal {
-    position: absolute;
-    top: 10px;
-    right: 20px;
+
+    position: sticky;
+
+    top: 0;
+
+    float: right;
+
     cursor: pointer;
-    font-size: 20px;
+
+    font-size: 28px;
+
+    background: white;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    z-index: 1000;
 }
 
 /* Contact */
@@ -189,4 +212,140 @@ footer button {
     padding:10px;
     width:100%;
 }
+/* MODAL IMAGE FIX */
 
+#modalImg{
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-top:10px;
+}
+/* Smooth Scroll */
+
+.modal-content::-webkit-scrollbar{
+    width:8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb{
+    background:gray;
+    border-radius:10px;
+}
+/* QUIZ */
+
+/* QUIZ BUTTONS */
+
+#quizAnswers button{
+
+    display:block;
+
+    width:100%;
+
+    margin:10px 0;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    background:#28a745;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+/* Hover */
+
+#quizAnswers button:hover{
+
+    background:#218838;
+}
+
+/* Selected Answer */
+
+.selectedAnswer{
+
+    background:#007bff !important;
+}
+
+/* Quiz Count Buttons */
+
+.quizCountBtn{
+
+    display:block;
+
+    width:100%;
+
+    margin:10px 0;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    background:#6f42c1;
+
+    color:white;
+}
+
+/* Next Button */
+
+#nextQuizBtn{
+
+    display:block;
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    background:#ff9800;
+
+    color:white;
+
+    font-weight:bold;
+}
+
+
+/* Selected Quiz Answer */
+
+.selectedAnswer{
+
+    background:#007bff !important;
+
+    color:white;
+}
+/* Next Button */
+
+#nextQuizBtn{
+
+    background:#ff9800;
+
+    color:white;
+
+    font-weight:bold;
+}
+
+#nextQuizBtn:hover{
+
+    background:#e68900;
+}

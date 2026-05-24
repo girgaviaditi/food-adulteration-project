@@ -30,7 +30,12 @@
     <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#productList">Products</a></li>
-        <li><a href="#quizSection">Quiz</a></li>
+        
+        <li>
+    <a href="#" id="openQuiz">
+        Quiz
+    </a>
+</li>
         <li><a href="#contactForm">Contact</a></li>
     </ul>
 
@@ -52,23 +57,7 @@
 </div>
 
         <main id="productList"></main>
-        <section id="quizSection">
-
-    <h2>Food Adulteration Quiz</h2>
-
-    <div id="quizBox">
-
-        <h3 id="question"></h3>
-
-        <div id="answers"></div>
-
-        <button id="nextQuestion">
-            Next Question
-        </button>
-
-    </div>
-
-</section>
+        
 
         <!-- Modal -->
         <div id="productModal" class="modal">
@@ -88,6 +77,65 @@
                 <button id="addExperienceBtn">Add Experience</button>
             </div>
         </div>
+        <!-- QUIZ MODAL -->
+
+<div id="quizModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeQuiz">&times;</span>
+
+        <h2>Food Adulteration Quiz</h2>
+
+        <!-- Choose Quiz -->
+
+        <div id="quizChoice">
+
+            <button class="quizCountBtn"
+            data-count="5">
+                Attempt 5 Questions
+            </button>
+
+            <button class="quizCountBtn"
+            data-count="10">
+                Attempt 10 Questions
+            </button>
+            <button class="quizCountBtn"
+data-count="15">
+    Attempt 15 Questions
+</button>
+
+<button class="quizCountBtn"
+data-count="20">
+    Attempt 20 Questions
+</button>
+
+        </div>
+
+        <!-- Quiz Area -->
+
+        <div id="quizArea"
+        style="display:none;">
+
+            <h3 id="quizQuestion"></h3>
+
+            <div id="quizAnswers"></div>
+
+            <button id="nextQuizBtn">
+                Next Question
+            </button>
+
+        </div>
+
+        <!-- Result -->
+
+        <div id="quizResult"
+        style="display:none;">
+        </div>
+
+    </div>
+
+</div>
 
         <!-- Contact Section -->
         <footer>

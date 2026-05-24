@@ -47,20 +47,20 @@ function loginSuccess() {
 
 // ===== Product Data =====
 const products = [
-    {name:"Milk",category:"Dairy", img:"https://mydiagnostics.in/cdn/shop/articles/img-1748326586409_1200x.jpg?v=1748327918", video:"https://youtube.com/shorts/Yu9igRZeK_s?si=v0zNU15ofgWhasVs",test:"Boil and check for smell", review:"Often adulterated with water", experiences:[]},
-    {name:"Turmeric",category:"Spices", img:"https://www.viralspices.com/wp-content/uploads/2024/11/Untitled-1.jpg",video:"https://youtube.com/shorts/xzI4oyX5g_o?si=Y86FCih1SRmNOQJi", test:"Add to water & check sediment", review:"Lead chromate sometimes added", experiences:[]},
-    {name:"Honey",category:"All", img:"https://astorapiaries.com/cdn/shop/articles/AA_How_to_tell_teh_difference_between_good_and_bad_honey_1080x.png?v=1686662686",video:"https://youtube.com/shorts/6kqHtpnBt88?si=98PJeKHlqGb2WbrJ" ,test:"Mix with water, pure honey sinks", review:"Sugar syrup often added", experiences:[]},
-    {name:"Sugar",category:"All", img:"https://www.tasteofhome.com/wp-content/uploads/2019/11/sugar-shutterstock_615908132.jpg", test:"Check for chalk powder",video:"https://youtube.com/shorts/fK7PTSY8TB8?si=oJDQiiQIAMFiM1Y6", review:"Sometimes mixed with chalk", experiences:[]},
-    {name:"Salt",category:"All", img:"https://goqii.com/blog/wp-content/uploads/word-salt-made-sea-salt-spoon-black-smokey-background-scaled.jpg",video:"https://youtube.com/shorts/oT_6pZu0hQU?si=MiQBOmguEyPWr4VY", test:"Check for white powdered stone", review:"Stone powder possible", experiences:[]},
-    {name:"Ghee",category:"Dairy", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqZ5UxSzSzXxUWjeanSxNzv9U4j9ZByTRfA&s", test:"Heat and check aroma",video:"https://youtube.com/shorts/Dp74Rr4IDBw?si=jFtQCxNVxkVXBWDC", review:"Mixed with vanaspati", experiences:[]},
-    {name:"Tea Powder",category:"All" ,img:"https://goodness-farm.com/wp-content/uploads/2021/04/ctc-tea.jpg", test:"Add to cold water",video:"https://youtube.com/shorts/ty7APfFNHz8?si=x1rLcynzbxY4aMVh", review:"Iron fillings found sometimes", experiences:[]},
-    {name:"Coffee",category:"All", img:"https://m.media-amazon.com/images/I/61f4SI+bXWL._UF1000,1000_QL80_.jpg", test:"Check for tamarind seed powder",video:"https://youtube.com/shorts/sYbDsnT5WvY?si=u96438sA2jNUMjY0", review:"Cheap powders added", experiences:[]},
-    {name:"Ice Cream",category:"All", img:"https://funcakes.com/content/uploads/2023/06/Ice-cream-recipe-600x450.webp", test:"Check for washing powder foam", review:"Non-edible fats used",video:"https://youtube.com/shorts/rYe-b_0hWK8?si=mwr_TWc-sn-6K1t7", experiences:[]},
-    {name:"Soft Drinks",category:"Drinks", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFg8xAxADTOXto6UntGguvQ8VOI9eNlDg9w&s", test:"Check excessive fizz", review:"Artificial color excess", experiences:[]},
-    {name:"Fruits",category:"All", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-Wzl5Dq6K2jyuBKMj0em4G6bpfGBBEDNAA&s", test:"Dip in water, remove wax",video:"https://youtube.com/shorts/66c39D3aN68?si=KV9hT7AcAGD5LtHP", review:"Wax coating common", experiences:[]},
-    {name:"Bread",category:"All", img:"https://theloopywhisk.com/wp-content/uploads/2024/08/Gluten-Free-Sandwich-Bread_1200px-2.jpg", test:"Check for smell",video:"https://youtube.com/shorts/Gq-kATANtMw?si=2lxSMvBXeP66vW1N", review:"Potassium bromate use",experiences:[]},
-    {name:"Rice",category:"Grains", img:"https://cdn.prod.website-files.com/66e9e86e939e026869639119/66fc4e47b5d69fb0deb88654_iStock-153737841-scaled.jpeg",video:"https://youtube.com/shorts/1CiFbxQxVvg?si=8trFZIOD45VGpVNv", test:"Burn to smell plastic", review:"Plastic rice incidents", experiences:[]},
-    {name:"Wheat Flour",category:"All", img:"https://5.imimg.com/data5/SELLER/Default/2024/3/403407725/MP/DS/JU/6846833/natural-wheat-flour-500x500.jpg", test:"Check for chalk powder",video:"https://youtube.com/shorts/lYdlROTOWe4?si=hUGv8mlk2aXsBJiU.mp4", review:"Chalk mixed for weight", experiences:[]}
+    {name:"Milk",category:"Dairy", img:"milk.jpg", video:"https://youtube.com/shorts/Yu9igRZeK_s?si=v0zNU15ofgWhasVs",test:"Boil and check for smell", review:"Often adulterated with water", experiences:[]},
+    {name:"Turmeric",category:"Spices", img:"turmeric.jpg",video:"https://youtube.com/shorts/xzI4oyX5g_o?si=Y86FCih1SRmNOQJi", test:"Add to water & check sediment", review:"Lead chromate sometimes added", experiences:[]},
+    {name:"Honey",category:"All", img:"honey.jpg",video:"https://youtube.com/shorts/6kqHtpnBt88?si=98PJeKHlqGb2WbrJ" ,test:"Mix with water, pure honey sinks", review:"Sugar syrup often added", experiences:[]},
+    {name:"Sugar",category:"All", img:"sugar.jpg", test:"Check for chalk powder",video:"https://youtube.com/shorts/fK7PTSY8TB8?si=oJDQiiQIAMFiM1Y6", review:"Sometimes mixed with chalk", experiences:[]},
+    {name:"Salt",category:"All", img:"salt.jpg",video:"https://youtube.com/shorts/oT_6pZu0hQU?si=MiQBOmguEyPWr4VY", test:"Check for white powdered stone", review:"Stone powder possible", experiences:[]},
+    {name:"Ghee",category:"Dairy", img:"ghee.jpg", test:"Heat and check aroma",video:"https://youtube.com/shorts/Dp74Rr4IDBw?si=jFtQCxNVxkVXBWDC", review:"Mixed with vanaspati", experiences:[]},
+    {name:"Tea Powder",category:"All" ,img:"teapowder.jpg", test:"Add to cold water",video:"https://youtube.com/shorts/ty7APfFNHz8?si=x1rLcynzbxY4aMVh", review:"Iron fillings found sometimes", experiences:[]},
+    {name:"Coffee",category:"All", img:"coffee.jpg", test:"Check for tamarind seed powder",video:"https://youtube.com/shorts/sYbDsnT5WvY?si=u96438sA2jNUMjY0", review:"Cheap powders added", experiences:[]},
+    {name:"Ice Cream",category:"All", img:"icecream.jpg", test:"Check for washing powder foam", review:"Non-edible fats used",video:"https://youtube.com/shorts/rYe-b_0hWK8?si=mwr_TWc-sn-6K1t7", experiences:[]},
+    {name:"Soft Drinks",category:"Drinks", img:"softdrinks.jpg", test:"Check excessive fizz", review:"Artificial color excess", experiences:[]},
+    {name:"Fruits",category:"All", img:"fruits.jpg", test:"Dip in water, remove wax",video:"https://youtube.com/shorts/66c39D3aN68?si=KV9hT7AcAGD5LtHP", review:"Wax coating common", experiences:[]},
+    {name:"Bread",category:"All", img:"bread.jpg", test:"Check for smell",video:"https://youtube.com/shorts/Gq-kATANtMw?si=2lxSMvBXeP66vW1N", review:"Potassium bromate use",experiences:[]},
+    {name:"Rice",category:"Grains", img:"rice.jpg",video:"https://youtube.com/shorts/1CiFbxQxVvg?si=8trFZIOD45VGpVNv", test:"Burn to smell plastic", review:"Plastic rice incidents", experiences:[]},
+    {name:"Wheat Flour",category:"All", img:"wheatflour.jpg", test:"Check for chalk powder",video:"https://youtube.com/shorts/lYdlROTOWe4?si=hUGv8mlk2aXsBJiU.mp4", review:"Chalk mixed for weight", experiences:[]}
 ];
 
 // ===== Render Products =====
@@ -129,6 +129,21 @@ document.getElementById("addExperienceBtn").addEventListener("click", () => {
         document.getElementById("experienceInput").value = "";
         renderExperiences();
     }
+});
+// ===== ENTER KEY FOR EXPERIENCE =====
+
+document.getElementById("experienceInput")
+.addEventListener("keypress",(e)=>{
+
+    if(e.key === "Enter"){
+
+        e.preventDefault();
+
+        document
+        .getElementById("addExperienceBtn")
+        .click();
+    }
+
 });
 
 // ===== Search =====
@@ -253,65 +268,247 @@ darkBtn.addEventListener("click", () => {
         darkBtn.textContent = "🌙 Dark Mode";
     }
 });
-// ===== Quiz Feature =====
 
-const quizData = [
+// ===== ENTER KEY LOGIN =====
+
+document
+.getElementById("password")
+.addEventListener("keypress",(e)=>{
+
+    if(e.key === "Enter"){
+
+        e.preventDefault();
+
+        authButton.click();
+
+    }
+
+});
+// ===== CONTACT FORM ENTER SUBMIT =====
+
+document
+.getElementById("contactForm")
+.addEventListener("keypress", (e) => {
+
+    // Don't submit inside textarea
+    if (
+        e.key === "Enter" &&
+        e.target.tagName !== "TEXTAREA"
+    ) {
+
+        e.preventDefault();
+
+        document
+        .querySelector("#contactForm button")
+        .click();
+    }
+
+});
+// ===== PROFESSIONAL QUIZ =====
+
+const quizQuestions = [
 
 {
 question:"Which adulterant is commonly found in milk?",
+
 answers:[
 "Water",
 "Salt",
 "Plastic",
-"Sand"
+"Stone"
 ],
+
 correct:0
 },
 
 {
 question:"Lead chromate is added in?",
+
 answers:[
 "Sugar",
-"Tea",
 "Turmeric",
-"Honey"
+"Honey",
+"Rice"
 ],
+
+correct:1
+},
+
+{
+question:"Artificial color is mostly added in?",
+
+answers:[
+"Soft Drinks",
+"Salt",
+"Ghee",
+"Milk"
+],
+
+correct:0
+},
+
+{
+question:"Which food is mixed with vanaspati?",
+
+answers:[
+"Tea",
+"Ghee",
+"Rice",
+"Coffee"
+],
+
+correct:1
+},
+
+{
+question:"Wax coating is found on?",
+
+answers:[
+"Fruits",
+"Salt",
+"Sugar",
+"Bread"
+],
+
+correct:0
+},
+
+{
+question:"Plastic rice can be identified by?",
+
+answers:[
+"Smell after burning",
+"Color",
+"Taste",
+"Cold water"
+],
+
+correct:0
+},
+
+{
+question:"Tea powder may contain?",
+
+answers:[
+"Water",
+"Salt",
+"Iron filings",
+"Sugar"
+],
+
 correct:2
 },
 
 {
-question:"Artificial colors are mostly found in?",
+question:"Honey is adulterated using?",
+
 answers:[
-"Soft Drinks",
-"Rice",
-"Salt",
-"Ghee"
+"Soap",
+"Sugar syrup",
+"Plastic",
+"Stone"
 ],
+
+correct:1
+},
+
+{
+question:"Which food may contain chalk powder?",
+
+answers:[
+"Wheat flour",
+"Milk",
+"Coffee",
+"Tea"
+],
+
 correct:0
+},
+
+{
+question:"Soft drinks may contain excessive?",
+
+answers:[
+"Protein",
+"Artificial color",
+"Fiber",
+"Calcium"
+],
+
+correct:1
 }
 
 ];
 
-let currentQuestion = 0;
+const quizModal =
+document.getElementById("quizModal");
 
-const questionEl =
-document.getElementById("question");
+document
+.getElementById("openQuiz")
+.addEventListener("click",()=>{
 
-const answersEl =
-document.getElementById("answers");
+    quizModal.style.display = "block";
 
-const nextBtn =
-document.getElementById("nextQuestion");
+});
 
-function loadQuestion(){
+document
+.getElementById("closeQuiz")
+.addEventListener("click",()=>{
+
+    quizModal.style.display = "none";
+
+});
+
+const quizButtons =
+document.querySelectorAll(".quizCountBtn");
+
+let selectedQuiz = [];
+
+let currentQuizIndex = 0;
+
+let userAnswers = [];
+
+let score = 0;
+
+quizButtons.forEach(btn=>{
+
+    btn.addEventListener("click",()=>{
+
+        const count =
+        Number(btn.dataset.count);
+
+        selectedQuiz =
+        quizQuestions.slice(0,count);
+
+        document
+        .getElementById("quizChoice")
+        .style.display = "none";
+
+        document
+        .getElementById("quizArea")
+        .style.display = "block";
+
+        loadQuizQuestion();
+
+    });
+
+});
+
+function loadQuizQuestion(){
 
     const q =
-    quizData[currentQuestion];
+    selectedQuiz[currentQuizIndex];
 
-    questionEl.textContent =
-    q.question;
+    document
+    .getElementById("quizQuestion")
+    .textContent =
+    `Q${currentQuizIndex+1}.
+    ${q.question}`;
 
-    answersEl.innerHTML = "";
+    const answersDiv =
+    document.getElementById("quizAnswers");
+
+    answersDiv.innerHTML = "";
 
     q.answers.forEach((ans,index)=>{
 
@@ -322,30 +519,113 @@ function loadQuestion(){
 
         btn.addEventListener("click",()=>{
 
-            if(index === q.correct){
-                alert("Correct!");
-            } else {
-                alert("Wrong!");
-            }
+    userAnswers[currentQuizIndex]
+    = index;
 
-        });
+    // Remove previous selected color
 
-        answersEl.appendChild(btn);
+    document
+    .querySelectorAll("#quizAnswers button")
+    .forEach(b=>{
+
+        b.classList.remove(
+            "selectedAnswer"
+        );
+
+    });
+
+    // Add selected color
+
+    btn.classList.add(
+        "selectedAnswer"
+    );
+
+});
+
+        answersDiv.appendChild(btn);
 
     });
 
 }
 
-nextBtn.addEventListener("click",()=>{
+document
+.getElementById("nextQuizBtn")
+.addEventListener("click",()=>{
 
-    currentQuestion++;
+    currentQuizIndex++;
 
-    if(currentQuestion >= quizData.length){
-        currentQuestion = 0;
+    if(currentQuizIndex < selectedQuiz.length){
+
+        loadQuizQuestion();
+
+    } else {
+
+        showQuizResult();
+
     }
-
-    loadQuestion();
 
 });
 
-loadQuestion();
+function showQuizResult(){
+
+    document
+    .getElementById("quizArea")
+    .style.display = "none";
+
+    const resultDiv =
+    document.getElementById("quizResult");
+
+    resultDiv.style.display = "block";
+
+    let resultHTML = "";
+
+    score = 0;
+
+    selectedQuiz.forEach((q,index)=>{
+
+        const correct =
+        q.correct === userAnswers[index];
+
+        if(correct) score++;
+
+        resultHTML += `
+
+        <p>
+
+        <strong>
+        Q${index+1}:
+        ${q.question}
+        </strong>
+
+        <br>
+
+        Your Answer:
+        ${q.answers[userAnswers[index]] || "Not Answered"}
+
+        <br>
+
+        Correct Answer:
+        ${q.answers[q.correct]}
+
+        <br>
+
+        ${correct ? "✅ Correct"
+        : "❌ Wrong"}
+
+        </p>
+
+        <hr>
+        `;
+    });
+
+    resultHTML += `
+    <h2>
+    Final Score:
+    ${score}/${selectedQuiz.length}
+    </h2>
+    `;
+
+    resultDiv.innerHTML =
+    resultHTML;
+
+}
